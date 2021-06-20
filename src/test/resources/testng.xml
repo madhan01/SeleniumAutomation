@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests" verbose="3">
+	<test thread-count="5" name="My  login practice test in chrome"
+		parallel="methods">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.tests.LoginTest"></class>
+		</classes>
+	</test>
+	<test thread-count="5" name="My  login practice test in Edge"
+		parallel="methods">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.tests.LoginTest"></class>
+		</classes>
+	</test>
+</suite>
